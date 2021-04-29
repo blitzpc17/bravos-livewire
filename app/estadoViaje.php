@@ -14,4 +14,5 @@ class estadoViaje extends Model
 
 
 
+
 }

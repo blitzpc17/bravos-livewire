@@ -8,6 +8,14 @@
 	<!--alerts CSS -->
 	<link href="{{asset('backend/vendors/bower_components/sweetalert/dist/sweetalert.css')}}" rel="stylesheet" type="text/css">
 	@livewireStyles
+
+	<style>
+		th{
+			text-align:center;
+		}
+	</style>
+
+
 @endpush
 
 @section('contenido')
@@ -28,9 +36,15 @@
 		</div>
 	<!-- /Title -->
 
+	
 	<!-- admon registros -->
-	<livewire:edoviaje />
+	<livewire:estado-viaje />
 	<!-- end admon registros-->
+	
+	
+
+	
+
 
 @endsection
 
@@ -46,8 +60,10 @@
 		$('#myModal').modal('hide');
 	});
 	Livewire.on('updEdoViaje',()=>{
-		$('#updModal').modal('hide');
+		$('#editModal').modal('hide');
 	});
+
+//	$('#myModal').modal('show');
 </script>
 
 @endpush
